@@ -9,6 +9,7 @@ func TestValidParentheses(t *testing.T) {
 	}{
 		{"{}", true}, {"{", false},
 		{"[{}]", true}, {"{{}", false},
+		{"[[", false}, {"xx", false},
 	}
 
 	for _, test := range tests {

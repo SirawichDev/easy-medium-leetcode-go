@@ -1,13 +1,5 @@
 package main
 
-import "fmt"
-
-func main() {
-	fmt.Println(ValidParentheses("("))
-	fmt.Println(ValidParentheses("[({})]"))
-	fmt.Println(ValidParentheses("("))
-}
-
 func ValidParentheses(str string) bool {
 	var stack []string
 	parenthesesMap := map[string]string{
